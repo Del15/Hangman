@@ -14,12 +14,16 @@
     </div>
     
     <div>
-        <input type = "text" size = "l" maxlength="1">
-        <button>Guess</button>
+        <input id="guess" type = "text" size = "l" maxlength="1">
+        <button onclick = "guessLetter();"> guess</button>
+    </div>
+
+    <div id = 'guesses'>
+
     </div>
 
     <div id ="newgamearea">
-        <button> New Game </button>
-    </div>
+        <button onclick="newGame();"> New Game </button>
+    </div> 
 </body>
 </html>
