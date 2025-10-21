@@ -1,12 +1,12 @@
-var Possbible_Words = ["javascript", "glass", "amazing", "pancake"];
+var Possible_Words = ["javascript", "glass", "amazing", "pancake"];
 
 var word = "";
 var guesses = "";
 
 function newGame() {
 
-    var randomIndex = parseInt(Math.random() * Possbible_Words.length);
-    word = Possbible_Words[randomIndex];
+    var randomIndex = parseInt(Math.random() * Possible_Words.length);
+    word = Possible_Words[randomIndex];
     guesses = "";
     updatePage();
 }
@@ -25,7 +25,7 @@ function updatePage() {
             clueString += currentLetter + " ";
         }
         else
-            clueString += "_";
+            clueString += " _ ";
     }
 
     var clue = document.getElementById("clue");
