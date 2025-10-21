@@ -1,4 +1,5 @@
-var Possible_Words = ["javascript", "glass", "amazing", "pancake"];
+var Possible_Words = ["javascript", "glass", "amazing", "pancake", "programming", "google", "developer", "apple", "python", "computer", "vault", "wizard",
+     "galaxy", "notebook", "keyboard", "route", "monitor", "laptop", "headphones", "charger", "internet"];
 
 var word = "";
 var guesses = "";
