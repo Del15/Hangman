@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src ="hangman.js"></script>
+    <title>gg's Hangman</title>
+    <!-- defer is so that the js loads after html elements -->
+    <script src ="hangman.js" defer></script>
     <link rel="stylesheet" href="hangman.css">
 </head>
 <body>
     <div>
-        <img src="images/hangman6.gif" alt ="hangman">
+        <!-- added id so that the js is able to update the images -->
+        <img id="hangmanImage" src="images/hangman6.gif" alt ="hangman">
         <div id = "clue"> Press New Game</div>
     </div>
     
     <div>
-        <input id="guess" type = "text" size = "l" maxlength="1">
+        <input id="letter" type = "text" size="l" maxlength="1">
         <button onclick = "guessLetter();"> guess</button>
     </div>
 
